@@ -1,6 +1,6 @@
 <template>
   <div class="one">
-    <img  @click="this.$router.push('second')" style="width: 414px" :src="firstMain" alt="">
+    <img  @click="this.$router.push('second')" style="width: 414px;" :src="firstMain" alt="">
     <img style="width: 414px; position: fixed; bottom: 0; display: block" :src="menu" alt="">
   </div>
 </template>
