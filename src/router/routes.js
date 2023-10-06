@@ -13,6 +13,21 @@ const routes = [
         path: '/third',
         name: 'third',
         component: () => import('@/pages/Third.vue')
+    },
+    {
+        path: '/fourth',
+        name: 'fourth',
+        component: () => import('@/pages/Fourth.vue')
+    },
+    {
+        path: '/fifth',
+        name: 'fifth',
+        component: () => import('@/pages/Fifth.vue')
+    },
+    {
+        path: '/sixth',
+        name: 'sixth',
+        component: () => import('@/pages/Sixth.vue')
     }
 ]
 export default routes
