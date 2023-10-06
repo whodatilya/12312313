@@ -17,7 +17,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-weight: 400;
             line-height: 6px; /* 125% */
@@ -25,7 +25,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-weight: 700;
             line-height: 7px; /* 105.263% */
@@ -35,7 +35,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-weight: 400;
             line-height: 6px; /* 125% */
@@ -43,7 +43,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-weight: 700;
             line-height: 7px; /* 105.263% */
@@ -56,7 +56,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-weight: 600;
             line-height: 7px; /* 126.316% */
@@ -68,7 +68,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-weight: 400;
             line-height: 6px; /* 125% */
@@ -76,7 +76,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-weight: 700;
             line-height: 7px; /* 105.263% */
@@ -86,7 +86,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-weight: 400;
             line-height: 6px; /* 125% */
@@ -94,7 +94,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-weight: 700;
             line-height: 7px; /* 105.263% */
@@ -107,7 +107,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-weight: 600;
             line-height: 7px; /* 126.316% */
@@ -119,7 +119,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-weight: 400;
             line-height: 6px; /* 125% */
@@ -127,7 +127,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-weight: 700;
             line-height: 7px; /* 105.263% */
@@ -137,7 +137,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-weight: 400;
             line-height: 6px; /* 125% */
@@ -145,7 +145,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -159,7 +159,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 600;
@@ -172,7 +172,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -181,7 +181,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -192,7 +192,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -201,7 +201,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -215,7 +215,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 600;
@@ -228,7 +228,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -237,7 +237,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -248,7 +248,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -257,7 +257,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -271,7 +271,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 600;
@@ -284,7 +284,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -293,7 +293,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -304,7 +304,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -313,7 +313,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -327,7 +327,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 600;
@@ -340,7 +340,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -349,7 +349,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -360,7 +360,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -369,7 +369,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -383,7 +383,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 600;
@@ -396,7 +396,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -405,7 +405,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -416,7 +416,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -425,7 +425,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -439,7 +439,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 600;
@@ -452,7 +452,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -461,7 +461,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -472,7 +472,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -481,7 +481,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -495,7 +495,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 600;
@@ -508,7 +508,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -517,7 +517,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -528,7 +528,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -537,7 +537,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -551,7 +551,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 600;
@@ -564,7 +564,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -573,7 +573,7 @@
           <div style="overflow: hidden;
             color: rgba(0, 0, 0, 0.60);
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -584,7 +584,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 6px;
             font-style: normal;
             font-weight: 400;
@@ -593,7 +593,7 @@
           <div style="overflow: hidden;
             color: #000;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-style: normal;
             font-weight: 700;
@@ -611,51 +611,5 @@ export default {
 }
 </script>
 <style scoped>
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("@/assets/fonts/SFProDisplay-Bold.eot");
-  src: local("SF Pro Display Bold"), local("SFProDisplay-Bold"),
-  url("@/assets/fonts/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"),
-  url("@/assets/fonts/SFProDisplay-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("@/assets/fonts/SFProDisplay-Regular.eot");
-  src: local("SF Pro Display Regular"), local("SFProDisplay-Regular"),
-  url("@/assets/fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),
-  url("@/assets/fonts/SFProDisplay-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("@/assets/fonts/SFProDisplay-Semibold.eot");
-  src: local("SF Pro Display Semibold"), local("SFProDisplay-Semibold"),
-  url("@/assets/fonts/SFProDisplay-Semibold.eot?#iefix") format("embedded-opentype"),
-  url("@/assets/fonts/SFProDisplay-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("@/assets/fonts/SFProText-Regular.ttf");
-  src: local("SF Pro Text Regular"), local("SFProText-Regular"),
-  url("@/assets/fonts/SFProText-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("@/assets/fonts/SFProText-Bold.ttf");
-  src: local("SF Pro Text Bold"), local("SFProText-Bold"),
-  url("@/assets/fonts/SFProText-Bold.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
 </style>
