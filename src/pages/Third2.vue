@@ -1,16 +1,30 @@
 <template>
   <div>
-    <img @click="this.$router.push('second')" style="width: 414px" :src="headerThird" alt="">
-    <img style="width: 414px" :src="indicatorPage" alt="">
-    <img @click="changeComponent" style="width: 414px" :src="!switcher ? component1 : component2" alt="">
-    <div style="display: flex; padding: 10px; background: rgba(0, 132, 255, 0.10); width: fit-content; border-radius: 10px; margin-left: 40px">
+    <div v-if="!hello">
+      <img @click="this.$router.push('second')" style="width: 414px" :src="headerThird" alt="">
+      <img style="width: 414px" :src="indicatorPage" alt="">
+      <img @click="changeComponent" style="width: 414px" :src="!switcher ? component1 : component2" alt="">
+      <div style="display: flex; padding: 10px; background: rgba(0, 132, 255, 0.10); width: fit-content; border-radius: 10px; margin-left: 40px">
       <span style="color: #0084FF;
-font-family: 'Gotham Pro', sans-serif;
-font-size: 7px;
-font-style: normal;
-font-weight: 500;
-line-height: 7px; /* 122.222% */
-letter-spacing: -0.45px;" @click="openModal">Добавить показатель</span>
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 7px; /* 122.222% */
+        letter-spacing: -0.45px;" @click="openModal">Добавить показатель</span>
+      </div>
+    </div>
+    <div v-else style="background: white; display: flex; flex-direction: column; font-family: 'Gotham Pro',sans-serif; font-size: 18px; font-weight: 600">
+      <img @click="employee" style="width: 414px" :src="backButton" alt="">
+      <span style="margin-left: 40px">Отправить письмо сотруднику</span>
+      <img style="margin: 0 40px;width: 334px" :src="who" alt="">
+      <img style="margin: 0 40px; width: 334px" :src="srok" alt="">
+      <img style="margin: 0 40px; width: 334px" :src="button" alt="">
+    </div>
+
+    <div v-if="modalSwitcher" style="display: flex; flex-direction: column;padding: 20px; gap: 10px; z-index: 999; background: white; box-shadow: 0px -12px 22px -3px rgba(34, 60, 80, 0.27);;border-radius: 10px 10px 0 0">
+      <div style="background: #f2f5fa; padding: 10px; border-radius: 6px; font-family: 'Gotham Pro', sans-serif">Добавлю сам</div>
+      <div @click="employee" style="background: #f2f5fa; padding: 10px; border-radius: 6px; font-family: 'Gotham Pro', sans-serif">Поручить сотруднику</div>
     </div>
   </div>
 </template>
@@ -24,6 +38,10 @@ import stack from '@/assets/Stack.svg'
 import indicatorPage from '@/assets/layouts/indicatorPage.svg'
 import component1 from '@/assets/layouts/component1.svg'
 import component2 from '@/assets/layouts/component2.svg'
+import backButton from '@/assets/backButton.jpg'
+import who from '@/assets/who.jpg'
+import srok from '@/assets/srok.jpg'
+import button from '@/assets/button.jpg'
 export default {
     name: 'IndexPage',
     data () {
@@ -35,15 +53,21 @@ export default {
         indicatorPage,
         component1,
         component2,
+        backButton,
+        srok,
+        button,
+        who,
         stack,
         isCategories: false,
         isTypes: true,
-        switcher: false
+        switcher: false,
+        modalSwitcher: false,
+        hello: false
       }
     },
     methods: {
       openModal () {
-
+        this.modalSwitcher = !this.modalSwitcher
       },
       changeComponent () {
         this.switcher = !this.switcher
@@ -55,6 +79,10 @@ export default {
       onTypesClick () {
         this.isTypes = true
         this.isCategories = false
+      },
+      employee () {
+        this.hello = !this.hello
+        this.modalSwitcher = false
       }
     }
 }
