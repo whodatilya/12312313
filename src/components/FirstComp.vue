@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex;flex-direction: row;flex-wrap: wrap; background: white; gap: 6px; border-radius: 0 6px 6px 6px; padding: 5px; margin: 0 39px; filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.20));">
+  <div style="display: flex;flex-direction: row;flex-wrap: wrap; background: white; gap: 6px; border-radius: 0 6px 6px 6px; padding: 5px; margin: 0 35px 0 39px; filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.20));">
     <div style="display: flex; padding: 6px;flex-direction: column; background: #FF9383; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
       <div style="overflow: hidden;
             color: #000;
