@@ -2,7 +2,7 @@
   <div>
     <img @click="this.$router.push('second')" style="width: 414px" :src="headerThird" alt="">
     <img style="width: 414px" :src="indicatorPage" alt="">
-    <img @click="changeComponent" style="width: 414px" :src="switcher ? component1 : component2" alt="">
+    <img @click="changeComponent" style="width: 414px" :src="!switcher ? component1 : component2" alt="">
     <div style="display: flex; padding: 10px; background: rgba(0, 132, 255, 0.10); width: fit-content; border-radius: 10px; margin-left: 40px">
       <span style="color: #0084FF;
 font-family: 'Gotham Pro', sans-serif;
@@ -10,7 +10,7 @@ font-size: 7px;
 font-style: normal;
 font-weight: 500;
 line-height: 7px; /* 122.222% */
-letter-spacing: -0.45px;">Добавить показатель</span>
+letter-spacing: -0.45px;" @click="openModal">Добавить показатель</span>
     </div>
   </div>
 </template>
@@ -42,6 +42,9 @@ export default {
       }
     },
     methods: {
+      openModal () {
+
+      },
       changeComponent () {
         this.switcher = !this.switcher
       },
