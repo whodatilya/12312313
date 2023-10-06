@@ -12,7 +12,7 @@ const routes = [
     {
         path: '/third',
         name: 'third',
-        component: () => import('@/pages/Third.vue')
+        component: () => import('@/pages/Third2.vue')
     },
     {
         path: '/fourth',
