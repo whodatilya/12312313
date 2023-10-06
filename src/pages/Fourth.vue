@@ -54,7 +54,10 @@ export default {
         isMensheJopa: false
       }
     },
-    methods: {
+    created() {
+      window.scrollBy(0, 0)
+    },
+  methods: {
       onCategoryClick () {
         this.isCategories = true
         this.isTypes = false
