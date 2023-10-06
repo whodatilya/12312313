@@ -1,18 +1,19 @@
 <template>
-  <div>
-    <img @click="this.$router.push('second')" style="width: 414px; height: 896px" :src="firstMain" alt="">
-<!--    <img  :src="first" alt="">-->
+  <div class="one">
+    <img  @click="this.$router.push('second')" style="width: 414px" :src="firstMain" alt="">
+    <img style="width: 414px; position: fixed; bottom: 0; display: block" :src="menu" alt="">
   </div>
 </template>
 
 <script>
-// import first from '@/assets/1-1.jpg'
-import firstMain from '@/assets/mainFirst.jpg'
+import firstMain from '@/assets/mainFirstCopy.jpg'
+import menu from '@/assets/menu.jpg'
 export default {
     name: 'IndexPage',
     data () {
       return {
-        firstMain
+        firstMain,
+        menu
       }
     }
 }
