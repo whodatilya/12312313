@@ -5,7 +5,7 @@
             color: #000;
             text-overflow: ellipsis;
             whitespace: nowrap;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 7px;
             font-weight: 600;
             line-height: 7px; /* 126.316% */
