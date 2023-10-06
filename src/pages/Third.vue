@@ -1,654 +1,127 @@
 <template>
   <div>
-    <img style="width: 414px" :src="thirdPage" alt="">
+    <img style="width: 414px" :src="headerThird" alt="">
     <div>
-      <img style="width: 414px" :src="graphic" alt="">
+      <img style="width: 414px" :src="graphic2" alt="">
     </div>
-    <div style="display: flex; flex-direction: row; background: #fafafa; padding: 0 36px; align-items: center;  margin-bottom: 10px">
-      <div style="border-radius: 10px; background: white; padding: 16px; font-size: 8px; filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.20));">Виды налогов</div>
-      <div style="border-radius: 10px; padding: 14px;font-size: 8px;">Категории</div>
-      <div style="border-radius: 10px; padding: 14px;font-size: 8px;">Министерства</div>
-      <div style="border-radius: 10px; padding: 14px;font-size: 8px;">Районы</div>
-      <div style="border-radius: 10px; padding: 14px;font-size: 8px;">Тип должников</div>
-    </div>
-    <div style="display: flex;flex-direction: row;flex-wrap: wrap; background: white; gap: 6px; padding: 0 40px;">
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #FF9383; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
+    <div style="display: flex; flex-direction: row; background: #fdfdfd; padding: 0 39px; align-items: center; margin-bottom: -9px">
+      <div style="border-radius: 10px; padding: 14px;font-size: 8px;" :class="{'isActive_block': isTypes}" @click="onTypesClick">
+        <span style="overflow: hidden;
+            color: #4A5A75;
             text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
+            font-family: SF Pro Text,sans-serif;
+            font-size: 8px;
             font-style: normal;
             font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Налог на прибыль организации
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">3 376</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">5 002</div>
-          </div>
-        </div>
+            line-height: 8px; /* 117.647% */
+            letter-spacing: -0.442px;" :class="{'isActive_text': isTypes}">
+          Виды налогов
+        </span>
       </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #FF9383; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
+      <div style="border-radius: 10px; padding: 14px;font-size: 8px;" :class="{'isActive_block': isCategories}">
+        <span :class="{'isActive_text': isCategories}" style="overflow: hidden;
+            color: #4A5A75;
             text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
+            font-family: SF Pro Text,sans-serif;
+            font-size: 8px;
             font-style: normal;
             font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Налог на доходы физ. лиц
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">2 487</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">3 687</div>
-          </div>
-        </div>
+            line-height: 8px; /* 117.647% */
+            letter-spacing: -0.442px;" @click="onCategoryClick">Категории</span>
       </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #5FD86B; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
+      <div style="border-radius: 10px; padding: 14px;font-size: 8px;">
+        <span style="overflow: hidden;
+            color: #4A5A75;
             text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
+            font-family: SF Pro Text,sans-serif;
+            font-size: 8px;
             font-style: normal;
             font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Транспортный налог с физ. лиц
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">1 265</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">1 051</div>
-          </div>
-        </div>
+            line-height: 8px; /* 117.647% */
+            letter-spacing: -0.442px;">Министерства</span>
       </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #FFCAC1; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
+      <div style="border-radius: 10px; padding: 14px;font-size: 8px;">
+        <span style="overflow: hidden;
+            color: #4A5A75;
             text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
+            font-family: SF Pro Text,sans-serif;
+            font-size: 8px;
             font-style: normal;
             font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Налог со специальным налоговым режимом
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">961</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">1 293</div>
-          </div>
-        </div>
+            line-height: 8px; /* 117.647% */
+            letter-spacing: -0.442px;">Районы</span>
       </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #FFCAC1; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
+      <div style="border-radius: 10px; padding: 14px;font-size: 8px;">
+        <span style="overflow: hidden;
+            color: #4A5A75;
             text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
+            font-family: SF Pro Text,sans-serif;
+            font-size: 8px;
             font-style: normal;
             font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Налог на имущество с организаций
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">773</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">791</div>
-          </div>
-        </div>
-      </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #FF9383; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Земельный налог с организаций
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">755</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">778</div>
-          </div>
-        </div>
-      </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #A2EAA9; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Налог на имущество с физ. лиц
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">391</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">387</div>
-          </div>
-        </div>
-      </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #A2EAA9; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Транспортный налог с организаций
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">261</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">260</div>
-          </div>
-        </div>
-      </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #5FD86B; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Земельный налог с физ. лиц
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">270</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">Факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">249</div>
-          </div>
-        </div>
-      </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #FF9383; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Акцизы
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">132</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">241</div>
-          </div>
-        </div>
-      </div>
-      <div style="display: flex; padding: 6px;flex-direction: column; background: #FF9383; border-radius: 6px; width: 65px; height: 65px; justify-content: space-between">
-        <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            whitespace: nowrap;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 7px; /* 126.316% */
-            letter-spacing: -0.442px;">
-          Прочие налоги и сборы
-        </div>
-        <div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">план</div>
-            <div style="overflow: hidden;
-            color: rgba(0, 0, 0, 0.60);
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">3</div>
-          </div>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px">
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 6px; /* 125% */
-            letter-spacing: -0.442px;">факт</div>
-            <div style="overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: SF Pro Text;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 7px; /* 105.263% */
-            letter-spacing: -0.442px;">16</div>
-          </div>
-        </div>
+            line-height: 8px; /* 117.647% */
+            letter-spacing: -0.442px;">Тип должников</span>
       </div>
     </div>
+    <first-comp v-if="isTypes"/>
+    <second-comp v-if="isCategories"/>
   </div>
 </template>
 
 <script>
 import thirdPage from '@/assets/3-2.jpg'
+import headerThird from '@/assets/headerThird.jpg'
 import graphic from '@/assets/Pages Stack 1.svg'
+import graphic2 from '@/assets/Pages+Stack+1.svg.png'
 import stack from '@/assets/Stack.svg'
+import FirstComp from "@/components/FirstComp.vue";
+import SecondComp from "@/components/SecondComp.vue";
 export default {
     name: 'IndexPage',
+  components: {SecondComp, FirstComp},
     data () {
       return {
+        headerThird,
         thirdPage,
         graphic,
-        stack
+        graphic2,
+        stack,
+        isCategories: false,
+        isTypes: true
+      }
+    },
+    methods: {
+      onCategoryClick () {
+        this.isCategories = true
+        this.isTypes = false
+      },
+      onTypesClick () {
+        this.isTypes = true
+        this.isCategories = false
       }
     }
 }
 </script>
 
 <style scoped lang="css">
+.isActive_text {
+  overflow: hidden;
+  color: #4A5A75;
+  text-overflow: ellipsis;
+  font-family: SF Pro Text,sans-serif;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 8px; /* 117.647% */
+  letter-spacing: -0.442px;
+}
+.isActive_block {
+  border-radius: 10px 10px 0 0 !important;
+  background: white !important;
+  padding: 5px 14px;
+  font-size: 8px !important;
+  filter: drop-shadow(0px 4px 40px rgba(1,1,1,1)) !important;
+}
 @font-face {
   font-family: "SF Pro Display";
   src: url("@/assets/fonts/SFProDisplay-Bold.eot");
