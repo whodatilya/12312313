@@ -4,7 +4,7 @@
       <img @click="this.$router.push('second')" style="width: 414px" :src="headerThird" alt="">
       <img style="width: 414px" :src="indicatorPage" alt="">
       <img @click="changeComponent" style="width: 414px" :src="!switcher ? component1 : component2" alt="">
-      <div style="display: flex; padding: 10px; background: rgba(0, 132, 255, 0.10); width: fit-content; border-radius: 10px; margin-left: 40px">
+      <div style="display: flex; padding: 10px; background: rgba(0, 132, 255, 0.10); width: fit-content; border-radius: 10px; margin-left: 40px; margin-bottom: 40px">
       <span style="color: #0084FF;
         font-family: 'Gotham Pro', sans-serif;
         font-size: 7px;
