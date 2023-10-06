@@ -9,7 +9,7 @@
         <span style="overflow: hidden;
             color: #4A5A75;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 8px;
             font-style: normal;
             font-weight: 600;
@@ -22,7 +22,7 @@
         <span :class="{'isActive_text': isCategories}" style="overflow: hidden;
             color: #4A5A75;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 8px;
             font-style: normal;
             font-weight: 600;
@@ -33,7 +33,7 @@
         <span style="overflow: hidden;
             color: #4A5A75;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 8px;
             font-style: normal;
             font-weight: 600;
@@ -44,7 +44,7 @@
         <span style="overflow: hidden;
             color: #4A5A75;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 8px;
             font-style: normal;
             font-weight: 600;
@@ -55,7 +55,7 @@
         <span style="overflow: hidden;
             color: #4A5A75;
             text-overflow: ellipsis;
-            font-family: SF Pro Text,sans-serif;
+            font-family: Gotham Pro,sans-serif;
             font-size: 8px;
             font-style: normal;
             font-weight: 600;
@@ -108,7 +108,7 @@ export default {
   overflow: hidden;
   color: #4A5A75;
   text-overflow: ellipsis;
-  font-family: SF Pro Text,sans-serif;
+  font-family: Gotham Pro,sans-serif;
   font-size: 8px;
   font-style: normal;
   font-weight: 600;
@@ -121,53 +121,6 @@ export default {
   padding: 5px 14px;
   font-size: 8px !important;
   filter: drop-shadow(0px 4px 40px rgba(1,1,1,1)) !important;
-}
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("@/assets/fonts/SFProDisplay-Bold.eot");
-  src: local("SF Pro Display Bold"), local("SFProDisplay-Bold"),
-  url("@/assets/fonts/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"),
-  url("@/assets/fonts/SFProDisplay-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("@/assets/fonts/SFProDisplay-Regular.eot");
-  src: local("SF Pro Display Regular"), local("SFProDisplay-Regular"),
-  url("@/assets/fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),
-  url("@/assets/fonts/SFProDisplay-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("@/assets/fonts/SFProDisplay-Semibold.eot");
-  src: local("SF Pro Display Semibold"), local("SFProDisplay-Semibold"),
-  url("@/assets/fonts/SFProDisplay-Semibold.eot?#iefix") format("embedded-opentype"),
-  url("@/assets/fonts/SFProDisplay-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("@/assets/fonts/SFProText-Regular.ttf");
-  src: local("SF Pro Text Regular"), local("SFProText-Regular"),
-  url("@/assets/fonts/SFProText-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("@/assets/fonts/SFProText-Bold.ttf");
-  src: local("SF Pro Text Bold"), local("SFProText-Bold"),
-  url("@/assets/fonts/SFProText-Bold.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
 }
 html, body {
   padding: 0;
