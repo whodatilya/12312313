@@ -6,6 +6,7 @@
             text-overflow: ellipsis;
             whitespace: nowrap;
             font-size: 7px;
+            font-family: SF Pro Text Regular,sans-serif;
             font-weight: 600;
             line-height: 7px; /* 126.316% */
             letter-spacing: -0.442px;">
@@ -249,7 +250,7 @@ export default {
 }
 
 @font-face {
-  font-family: "SF Pro Text";
+  font-family: "SF Pro Text Regular";
   src: url("@/assets/fonts/SFProText-Regular.ttf");
   src: local("SF Pro Text Regular"), local("SFProText-Regular"),
   url("@/assets/fonts/SFProText-Regular.ttf") format("truetype");
