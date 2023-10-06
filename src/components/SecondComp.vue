@@ -6,7 +6,7 @@
             text-overflow: ellipsis;
             whitespace: nowrap;
             font-size: 7px;
-            font-family: SF Pro Text Regular,sans-serif;
+            font-family: SF Pro Text,sans-serif;
             font-weight: 600;
             line-height: 7px; /* 126.316% */
             letter-spacing: -0.442px;">
