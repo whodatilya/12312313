@@ -2,7 +2,7 @@
   <div class="two">
     <img @click="this.$router.push('first')" style="width: 414px" :src="headerSecond" alt="">
     <img @click="this.$router.push('third')" style="width: 414px; margin-top: -6px;" :src="contentSecond" alt="">
-    <img style="width: 414px;" :src="contentSecondCont" alt="">
+    <img style="width: 414px; margin-top: -6px" :src="contentSecondCont" alt="">
   </div>
 </template>
 
