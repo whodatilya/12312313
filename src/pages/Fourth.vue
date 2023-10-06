@@ -9,8 +9,11 @@
     </div>
     <div style="margin: 18px 40px; display: flex; justify-content: center">
       <div style="position: relative">
-        <img @click="this.$router.push('sixth')" style="width: 250px" :src="cabinetList" alt="">
-        <img @click="this.$router.push('fifth')" style="position: absolute; top: 13px" :src="vectorButton" alt="">
+        <img v-if="isJopa" @click="changeEcran2" style="width: 250px" :src="cabinetItem" alt="">
+        <img v-if="!isJopa && !isMensheJopa" @click="changeEcran" style="width: 250px" :src="cabinetList" alt="">
+
+        <img v-if="!isJopa && !isMensheJopa" @click="changeMoreEcran" style="position: absolute; top: 13px" :src="vectorButton" alt="">
+        <img v-if="isMensheJopa" @click="changeMoreEcran2" style="width: 250px" :src="cabinetAdd" alt="">
       </div>
     </div>
   </div>
@@ -26,6 +29,8 @@ import graphicFourth from '@/assets/Pages+Stack+1Копия.svg.png'
 import cabinetList from '@/assets/cabinetList.jpg'
 import additional from '@/assets/additional.png'
 import vectorButton from '@/assets/Vector.svg'
+import cabinetItem from '@/assets/cabinetItem.jpg'
+import cabinetAdd from '@/assets/cabinetAddFile.png'
 export default {
     name: 'FourthPage',
     data () {
@@ -39,8 +44,12 @@ export default {
         stack,
         graphicFourth,
         cabinetList,
+        cabinetItem,
+        cabinetAdd,
         isCategories: false,
-        isTypes: true
+        isTypes: true,
+        isJopa: false,
+        isMensheJopa: false
       }
     },
     methods: {
@@ -51,6 +60,18 @@ export default {
       onTypesClick () {
         this.isTypes = true
         this.isCategories = false
+      },
+      changeEcran () {
+        this.isJopa = true
+      },
+      changeEcran2 () {
+        this.isJopa = false
+      },
+      changeMoreEcran () {
+        this.isMensheJopa = true
+      },
+      changeMoreEcran2 () {
+        this.isMensheJopa = false
       }
     }
 }
