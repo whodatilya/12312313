@@ -1,7 +1,7 @@
 const routes = [
     {
-        path: '/',
-        name: '',
+        path: '/first',
+        name: 'first',
         component: () => import('@/pages/Index')
     },
     {
