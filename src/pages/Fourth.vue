@@ -4,14 +4,13 @@
     <div>
       <img style="width: 414px" :src="graphicFourth" alt="">
     </div>
-    <div style="margin: 0 40px">
-      <div @click="this.$router.push('fifth')" style="display: flex; border-radius: 6px; border: 2px solid #0084FF; width: fit-content">
-      <span style="padding: 8px 8px; color: #0084FF; font-family: Gotham Pro, sans-serif; font-weight: 600; font-size: 12px">
-        Импортировать данные
-      </span>
-      </div>
-      <div>
-        <img @click="this.$router.push('sixth')" style="width: 324px" :src="cabinetList" alt="">
+    <div style="display: flex; margin-left: 40px">
+      <img style="width: 355px" :src="additional" alt="">
+    </div>
+    <div style="margin: 18px 40px; display: flex; justify-content: center">
+      <div style="position: relative">
+        <img @click="this.$router.push('sixth')" style="width: 250px" :src="cabinetList" alt="">
+        <img @click="this.$router.push('fifth')" style="position: absolute; top: 13px" :src="vectorButton" alt="">
       </div>
     </div>
   </div>
@@ -25,6 +24,8 @@ import graphic2 from '@/assets/Pages+Stack+1.svg.png'
 import stack from '@/assets/Stack.svg'
 import graphicFourth from '@/assets/Pages+Stack+1Копия.svg.png'
 import cabinetList from '@/assets/cabinetList.jpg'
+import additional from '@/assets/additional.png'
+import vectorButton from '@/assets/Vector.svg'
 export default {
     name: 'FourthPage',
     data () {
@@ -33,6 +34,8 @@ export default {
         thirdPage,
         graphic,
         graphic2,
+        additional,
+        vectorButton,
         stack,
         graphicFourth,
         cabinetList,
