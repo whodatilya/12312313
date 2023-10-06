@@ -14,6 +14,8 @@
 
         <img v-if="!isJopa && !isMensheJopa" @click="changeMoreEcran" style="position: absolute; top: 13px" :src="vectorButton" alt="">
         <img v-if="isMensheJopa" @click="changeMoreEcran2" style="width: 250px" :src="cabinetAdd" alt="">
+        <div v-if="isMensheJopa" style="height: 300px; background: white">
+        </div>
       </div>
     </div>
   </div>
