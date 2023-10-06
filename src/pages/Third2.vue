@@ -22,7 +22,7 @@
       <img style="margin: 0 40px; width: 334px" :src="button" alt="">
     </div>
 
-    <div v-if="modalSwitcher" style="display: flex; flex-direction: column;padding: 20px; gap: 10px; z-index: 999; background: white; box-shadow: 0px -12px 22px -3px rgba(34, 60, 80, 0.27);;border-radius: 10px 10px 0 0">
+    <div v-if="modalSwitcher" style="position: fixed; bottom:0; width:100%;display: flex; flex-direction: column;padding: 20px; gap: 10px; z-index: 999; background: white; box-shadow: 0px -12px 22px -3px rgba(34, 60, 80, 0.27);;border-radius: 10px 10px 0 0">
       <div style="background: #f2f5fa; padding: 10px; border-radius: 6px; font-family: 'Gotham Pro', sans-serif">Добавлю сам</div>
       <div @click="employee" style="background: #f2f5fa; padding: 10px; border-radius: 6px; font-family: 'Gotham Pro', sans-serif">Поручить сотруднику</div>
     </div>
