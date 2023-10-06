@@ -65,7 +65,10 @@ export default {
         hello: false
       }
     },
-    methods: {
+  created() {
+    window.scrollBy(0, 0)
+  },
+  methods: {
       openModal () {
         this.modalSwitcher = !this.modalSwitcher
       },
