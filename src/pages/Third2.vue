@@ -3,7 +3,28 @@
     <div v-if="!hello">
       <img @click="this.$router.push('second')" style="width: 414px" :src="headerThird" alt="">
       <img style="width: 414px" :src="indicatorPage" alt="">
-      <img @click="changeComponent" style="width: 414px" :src="!switcher ? component1 : component2" alt="">
+      <img v-if="!switcher" @click="changeComponent" style="width: 414px" src="@/assets/svg/tabbarMinistry.svg" alt="">
+      <img v-else @click="changeComponent" style="width: 414px" src="@/assets/svg/tabbarCategory.svg" alt="">
+      <div v-if="!switcher" class="tabs">
+        <img src="@/assets/svg/ministry/1.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/2.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/3.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/4.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/5.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/6.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/7.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/8.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/9.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/10.svg" alt="" class="tab">
+        <img src="@/assets/svg/ministry/11.svg" alt="" class="tab">
+      </div>
+      <div v-else class="tabs">
+        <img src="@/assets/svg/category/1.svg" alt="" class="tab">
+        <img src="@/assets/svg/category/2.svg" alt="" class="tab">
+        <img src="@/assets/svg/category/3.svg" alt="" class="tab">
+        <img src="@/assets/svg/category/4.svg" alt="" class="tab">
+      </div>
+
       <div @click="openModal" style="display: flex; padding: 10px; background: rgba(0, 132, 255, 0.10); width: fit-content; border-radius: 10px; margin-left: 40px; margin-bottom: 150px">
       <span style="color: #0084FF;
         font-family: 'Gotham Pro', sans-serif;
@@ -350,4 +371,22 @@ html, body {
     border-radius: 4px
   }
 }
+
+.tabs {
+  background: #FFFFFF;
+  padding: 10px;
+  border-radius: 0 16px 16px 16px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 37px 0 42px;
+  position: relative;
+  top: -4px;
+}
+
+.tab {
+  width: 152px;
+}
+
 </style>
