@@ -1,13 +1,13 @@
 <template>
   <div style="width: 414px; overflow-x: hidden;">
     <img @click="this.$router.push('second')" style="width: 414px" :src="headerThird" alt="">
-    <div class="relative-left">
+    <div v-if="!isBrowserOpened" class="relative-left">
       <img style="width: 466px" :src="graphicFourth" alt="">
     </div>
-    <div class="relative-left" style="display: flex; margin-left: 46px">
+    <div v-if="!isBrowserOpened" class="relative-left" style="display: flex; margin-left: 46px">
       <img style="width: 365px" :src="additional" alt="">
     </div>
-    <div @click="isBrowserOpened = true" style="display: flex; padding: 10px; background: #0084FF; width: fit-content; border-radius: 10px; margin-left: 22px; margin-top: 15px; margin-bottom: 15px">
+    <div v-if="!isBrowserOpened" @click="isBrowserOpened = true" style="display: flex; padding: 10px; background: #0084FF; width: fit-content; border-radius: 10px; margin-left: 22px; margin-top: 15px; margin-bottom: 15px">
       <span style="color: white;
         font-family: 'Gotham Pro', sans-serif;
         font-size: 7px;
