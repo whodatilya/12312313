@@ -17,13 +17,13 @@
         letter-spacing: -0.45px;">Заполнить данные</span>
     </div>
     <div v-if="isBrowserOpened" class="browser-content">
-      <div @click="isBrowserOpened = false" style="display: flex; padding: 10px; width: fit-content; border-radius: 10px; margin-left: 323px; margin-top: 10px; margin-bottom: 10px">
+      <div @click="isBrowserOpened = false" style="display: flex; padding: 10px; width: fit-content; border-radius: 10px; margin-left: 309px; margin-top: 10px; margin-bottom: 10px">
         <span style="color: #0084FF;
           font-family: 'Gotham Pro', sans-serif;
-          font-size: 7px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 500;
-          line-height: 7px; /* 122.222% */
+          line-height: 14px; /* 122.222% */
           letter-spacing: -0.45px;">Готово</span>
       </div>
       <div style="display: flex; justify-content: center;"> 
