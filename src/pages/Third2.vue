@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div style="width: 414px; overflow-x: hidden;">
     <div v-if="!hello">
       <img @click="this.$router.push('second')" style="width: 414px" :src="headerThird" alt="">
-      <img style="width: 414px" :src="indicatorPage" alt="">
-      <img @click="changeComponent" style="width: 414px" :src="!switcher ? component1 : component2" alt="">
-      <div @click="openModal" style="display: flex; padding: 10px; background: rgba(0, 132, 255, 0.10); width: fit-content; border-radius: 10px; margin-left: 40px; margin-bottom: 150px">
+      <img style="width: 466px" class="relative-left" :src="indicatorPage" alt="">
+      <img @click="changeComponent" class="relative-left" style="width: 466px" :src="!switcher ? component1 : component2" alt="">
+      <div @click="openModal" style="display: flex; padding: 10px; background: rgba(0, 132, 255, 0.10); width: fit-content; border-radius: 10px; margin-left: 22px; margin-bottom: 150px">
       <span style="color: #0084FF;
         font-family: 'Gotham Pro', sans-serif;
         font-size: 7px;
@@ -22,7 +22,7 @@
       <img style="margin: 0 40px; width: 334px" :src="button" alt="">
     </div>
 
-    <div v-if="modalSwitcher" style="position: fixed; bottom:0; width:100%;display: flex; flex-direction: column;padding: 20px; gap: 10px; z-index: 999; background: white; box-shadow: 0px -12px 22px -3px rgba(34, 60, 80, 0.27);;border-radius: 10px 10px 0 0">
+    <div v-if="modalSwitcher" style="position: fixed; bottom:0; width:373px; display: flex; flex-direction: column;padding: 20px; gap: 10px; z-index: 999; background: white; box-shadow: 0px -12px 22px -3px rgba(34, 60, 80, 0.27);;border-radius: 10px 10px 0 0">
       <div style="background: #f2f5fa; padding: 10px; border-radius: 6px; font-family: 'Gotham Pro', sans-serif">Добавлю сам</div>
       <div @click="employee" style="background: #f2f5fa; padding: 10px; border-radius: 6px; font-family: 'Gotham Pro', sans-serif">Поручить сотруднику</div>
     </div>
@@ -315,6 +315,11 @@ html, body {
 }
 .value__red {
   color: #F00;
+}
+
+.relative-left {
+  position: relative;
+  left: -26px;
 }
 
 @keyframes glowing__green {
