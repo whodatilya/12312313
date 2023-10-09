@@ -1,20 +1,38 @@
 <template>
-  <div>
+  <div style="width: 414px; overflow-x: hidden;">
     <img @click="this.$router.push('second')" style="width: 414px" :src="headerThird" alt="">
-    <div>
-      <img style="width: 414px" :src="graphicFourth" alt="">
+    <div class="relative-left">
+      <img style="width: 466px" :src="graphicFourth" alt="">
     </div>
-    <div style="display: flex; margin-left: 40px">
-      <img style="width: 355px" :src="additional" alt="">
+    <div class="relative-left" style="display: flex; margin-left: 46px">
+      <img style="width: 365px" :src="additional" alt="">
     </div>
-    <div style="margin: 18px 40px; display: flex; justify-content: center">
-      <div style="position: relative">
-        <img v-if="isJopa" @click="changeEcran2" style="width: 250px" :src="cabinetItem" alt="">
-        <img v-if="!isJopa && !isMensheJopa" @click="changeEcran" style="width: 250px" :src="cabinetList" alt="">
-
-        <img v-if="!isJopa && !isMensheJopa" @click="changeMoreEcran" style="position: absolute; top: 13px" :src="vectorButton" alt="">
-        <img v-if="isMensheJopa" @click="changeMoreEcran2" style="width: 250px" :src="cabinetAdd" alt="">
-        <div v-if="isMensheJopa" style="height: 300px; background: white">
+    <div @click="isBrowserOpened = true" style="display: flex; padding: 10px; background: #0084FF; width: fit-content; border-radius: 10px; margin-left: 22px; margin-top: 15px; margin-bottom: 15px">
+      <span style="color: white;
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 7px; /* 122.222% */
+        letter-spacing: -0.45px;">Заполнить данные</span>
+    </div>
+    <div v-if="isBrowserOpened" class="browser-content">
+      <div @click="isBrowserOpened = false" style="display: flex; padding: 10px; width: fit-content; border-radius: 10px; margin-left: 323px; margin-top: 10px; margin-bottom: 10px">
+        <span style="color: #0084FF;
+          font-family: 'Gotham Pro', sans-serif;
+          font-size: 7px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 7px; /* 122.222% */
+          letter-spacing: -0.45px;">Готово</span>
+      </div>
+      <div style="display: flex; justify-content: center;"> 
+        <div style="position: relative; left: -10px">
+          <img v-if="isJopa" @click="changeEcran2" style="width: 336px" :src="cabinetItem" alt="">
+          <img v-if="!isJopa && !isMensheJopa" @click="changeEcran" style="width: 336px" :src="cabinetList" alt="">
+          <img v-if="!isJopa && !isMensheJopa" @click="changeMoreEcran" style="position: absolute; top: 20px" :src="vectorButton" alt="">
+          <img v-if="isMensheJopa" @click="changeMoreEcran2" style="width: 336px" :src="cabinetAdd" alt="">
+          <div v-if="isMensheJopa" style="height: 336px; background: white"></div>
         </div>
       </div>
     </div>
@@ -51,7 +69,8 @@ export default {
         isCategories: false,
         isTypes: true,
         isJopa: false,
-        isMensheJopa: false
+        isMensheJopa: false,
+        isBrowserOpened: false
       }
     },
     created() {
@@ -101,6 +120,14 @@ export default {
   font-size: 8px !important;
   filter: drop-shadow(0px 4px 40px rgba(1,1,1,1)) !important;
 }
+
+.browser-content {
+  margin: 18px 22px; 
+  background: #FFF;
+  border: 1px solid #CBCBCB;
+  border-radius: 16px;
+}
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("@/assets/fonts/SFProDisplay-Bold.eot");
@@ -370,6 +397,11 @@ html, body {
     box-shadow: 0 0 0 12px transparent;
     border-radius: 4px
   }
+}
+
+.relative-left {
+  position: relative;
+  left: -26px;
 }
 
 @keyframes glowing__red {
